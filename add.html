@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Days Cracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add New Cracker</h1>
+        <p>Create a new goal and track your days.</p>
+    </header>
+
+    <main>
+        <form id="cracker-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <label for="reason">Reason:</label>
+            <input type="text" id="reason" placeholder="Reason for Days Cracker" required>
+
+            <label for="days">Number of Days:</label>
+            <input type="number" id="days" placeholder="Enter number of days" required min="1">
+
+            <button type="submit">Create Cracker</button>
+        </form>
+
+        <section id="cracker-output">
+            <h2>Your Days Cracker</h2>
+            <div id="circles-container"></div>
+            <p id="remaining-days"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Kingsly  Days Cracker</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
